@@ -13,7 +13,7 @@ module.exports = {
   core: {
     builder: "webpack5",
   },
-  webpackFinal: async (config, { configType }) => {
+  webpackFinal: async (config) => {
     config.resolve.alias = {
       ...config.resolve.alias,
       "@emotion/core": toPath("node_modules/@emotion/react"),
